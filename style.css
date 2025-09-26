@@ -1,0 +1,146 @@
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: linear-gradient(135deg, #c9d6ff, #e2e2e2);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.task-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.task-form input, .task-form select, .task-form button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.task-form input[type="text"] {
+  flex: 1;
+}
+
+.task-form button {
+  background: #4CAF50;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.task-form button:hover {
+  background: #45a049;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
+.controls select, .controls button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+}
+
+button.danger {
+  background: crimson;
+  color: #fff;
+  border: none;
+}
+
+button.danger:hover {
+  background: darkred;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fafafa;
+  padding: 12px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  animation: fadeIn 0.3s ease;
+}
+
+.task-details {
+  flex: 1;
+}
+
+.task-details span {
+  display: block;
+  font-size: 14px;
+  margin: 2px 0;
+}
+
+.task-completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.today-date {
+  color: #fff;
+  background: #4CAF50;
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.expired-date {
+  color: #fff;
+  background: crimson;
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.delete-btn {
+  background: crimson;
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  margin-left: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: 0.2s;
+}
+
+.delete-btn:hover {
+  background: darkred;
+}
+
